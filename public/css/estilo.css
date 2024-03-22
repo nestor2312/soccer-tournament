@@ -1,0 +1,990 @@
+:root{
+  --color-box:linear-gradient(180deg, #152039 0%, #00bf63cc 100%);
+}
+/* .table-play-offs {
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 3px; 
+}
+th, td {
+  text-align: center;
+  padding: 15px;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+}
+td.borde {
+  border-radius: 5px;
+  background-color: #D9D9D9; 
+  border: 2px solid #000; 
+  color: #000000bc;
+}
+td.solido {
+  border-right: 2px dashed  #000000; 
+} */
+
+
+
+.eliminatorias{
+    width: 50%;
+  }
+  .eliminatorias-user{
+    width: 95%;
+   
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .center2{
+    text-align: center;
+    width: 12px;
+  }
+  .margen{
+    margin-bottom: 10px;
+  }
+  img{
+    width: 60px;
+  }
+
+  .logo{
+    width: 40px;
+  }
+
+  .logo2{
+    width: 70%;
+  }
+  .redcard{
+    border-color: #1f2d3d;
+    height: 18px;
+    border: 1px solid;
+    border-radius: 2px;
+    background: red;
+  }
+  .yellowcard{
+   
+    border-color: #1f2d3d;
+    height: 18px;
+    border: 1px solid;
+    border-radius: 2px;
+     background: yellow;
+   }
+   .link-normal{
+     color: white;
+   }
+   .fondo{
+    /* background: linear-gradient(135deg, rgb(0, 0, 0) 23%,#45df52e3 100%) ; */
+    background: linear-gradient(180deg, #152039 30%, #00bf638b 90%);}
+
+
+
+a{
+ 
+  text-transform:capitalize;
+  
+  letter-spacing: 0.02rem;
+ 
+}
+   .link{
+    color: rgb(175, 175, 175);
+    font-size: 15px;
+    font-weight: bold;
+   }
+   .link:hover{
+     color: white;
+   }
+   
+
+.boton{
+  display: inline-flex;
+  background:  rgba(0, 191, 99, 0.80) 100%;
+  color: white;
+  width: 100px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 17px;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  text-transform: uppercase;
+}
+.boton:after{
+  content:'';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  transition: .5s;
+  left: -100px;
+  background:  var(--color-box);
+}
+.boton span {
+  position: relative;
+  z-index: 1;
+}
+.boton:hover::after{
+  left: 0;
+}
+
+.botonUno{
+  display: inline-flex;
+  background: linear-gradient(180deg, rgba(21, 32, 57, 0.90) 0%, rgba(21, 32, 57, 0.80) 100%);
+  color: white;
+  width: 100px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  text-transform: capitalize;
+}
+.botonUno:after{
+  content:'';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  transition: .5s;
+  left: -690px;
+  top: 0px;
+  background: var(--color-box);
+}
+.botonUno span {
+  position: relative;
+  z-index: 1;
+}
+.botonUno:hover::after{
+  left: 0;
+}
+.user{
+  background: #F5F5F5;
+}
+.box{
+  margin-top: 5px;
+}
+.matches{
+  color: #f8f9fa;
+  text-decoration: none;
+}
+.matches:hover{
+  color: #f8f9fa;
+  text-decoration: none;
+}
+.color{
+  color: #FFF;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Days One;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.53px; /* 175.217% */
+  letter-spacing: 0.263px;
+  text-transform: uppercase;
+ 
+background: #152039;
+border-radius: 5px;
+border: 2px solid #D9D9D9; /* Borde de celdas de borde */
+}
+.icon{
+  background: #7abaff;
+  width: 3px;
+  height: 25px;
+}
+li{
+  list-style: none;
+}
+.fuente{
+  font-weight: bolder;
+}
+
+
+
+.alerta{
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+.navbar-light .navbar-toggler {
+  color: rgb(245, 245, 245)!important;
+  border-color: rgb(0, 0, 0)!important;
+}
+.navbar-toggler  {
+  padding: 0.25rem 0.75rem!important;
+  font-size: 1.25rem!important;
+  line-height: 1!important;
+  background-color: transparent!important;
+  border: 1px solid rgb(216, 216, 216)!important;
+  border-radius: 0.25rem!important;
+}
+.active{
+  color: #f8f9fa!important;
+}
+
+.login{
+  background:  var(--color-box);
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+.TITULO{
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.titulo2{
+  text-align: center;
+  font-family: Days One;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: linear-gradient(180deg, #00bf63cc 0%, rgba(9, 83, 126, 0.80) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+.titulo3{
+  font-family: Days One;
+  background: linear-gradient(180deg, rgba(0, 191, 99, 0.80) 0%, rgba(9, 83, 126, 0.80) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+  text-align: left;
+}
+.fondo-card{
+  background:  var(--color-box);
+}
+
+.team {
+  color: #000;
+font-family: Roboto Condensed;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+text-align: left;
+}
+.data{
+  color: #000;
+text-align: center;
+font-family: Roboto Condensed;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.shadow{
+  border-radius: 4px;
+background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.card-shadow{
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+.tarjeta{
+  width: 100px;
+height: 115px;
+flex-shrink: 0;
+}
+
+.inner-card {
+  width: 100px;
+  height: 110px;
+  margin: 5px;
+  background-color: #F5F5F5; 
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+footer{
+  
+  color: #F5F5F5;
+  background: linear-gradient(180deg, #152039e6 0%, rgba(21, 32, 57, 0.80) 100%);
+}
+
+.score{
+  font-weight: bold;
+}
+
+
+
+.card-matches{
+  height: 130px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: 0.5s ease;
+}
+.card-matches:hover{
+  scale: 1.04;
+  transition: 0.3s ease;
+  border: 1px solid #152039e6;
+
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+/* .hiden{
+  display: none;
+} */
+
+
+/* paginador */
+.page-item.active .page-link {
+  background:linear-gradient(180deg, rgba(21, 32, 57, 0.648) 0%, rgba(21, 32, 57, 0.596) 100%)!important; 
+  border-color: #212529; 
+  color: rgb(255, 255, 255);
+}
+.team-item2{
+  text-decoration: none; 
+  color: inherit; 
+
+  /* Estilos cuando el mouse pasa sobre el enlace */
+  transition: text-decoration 0.3s ease; 
+}
+.team-item2:hover {
+  text-decoration: none;
+}
+
+.inner-card:hover{
+  scale: 1.05;
+  transition: 0.3s ease;
+  background-color: #D9D9D9;
+}
+
+.card-hover:hover{
+  background-color: #ffffffe3;
+}
+
+/* flashcard */
+.card-body .back {
+  display: none;
+  transform: rotateY(-180deg);
+  direction: ltr;
+}
+.card-body.flipped .front {
+  display: none;
+}
+.card-body.flipped .back {
+  display: block;
+  transform: rotateY(-180deg);
+  direction: ltr;
+}
+.card-body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  margin-bottom: 5px;
+}
+.card-body.flipped {
+  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
+  direction: ltr;
+}
+/* .eliminatorias */
+
+
+.esquema {
+  display: flex;
+  justify-content: center;        
+}
+
+/* Lineas */
+.conectores {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;    
+}
+.conectores .conector {
+  display: flex;
+  align-items: center;
+}
+.conectores .conector .conector_doble {
+  width: 40px;
+  height: 50px;        
+  padding: 10px;
+  border-top: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-right: 2px solid rgb(0, 0, 0);    
+}
+
+.conectores .conector .conector_simple {
+  width: 20px;    
+  padding: 0 15px 0 0;
+  border: 1px solid rgb(0, 0, 0);
+  
+}
+
+.conectores .conector .conector_doble_semifinal {
+  height: 150px;
+}
+
+.conectores .conector .conector_doble_ganador {
+  height: 300px;
+}
+
+.equipo {
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+  font-family: Roboto Condensed;
+ 
+}
+
+.goles {
+  color: #000;
+  text-align: center;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: bold;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: 10px;
+  
+  
+}
+
+/* Octavos de finl */
+
+.partido {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;    
+  padding: 10px 0 10px 10px;   
+}
+
+.partido .jugador {
+  width: 150px;
+  border-radius: 5px;
+  background-color: #D9D9D9; 
+  border: 2px solid #000000; 
+
+}
+
+.partido .jornada{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.partido .jornada .jugador {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+
+
+/* Cuartos de final */
+.jornada_contenedor  {
+  display: flex;    
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.jornada_contenedor .jornada .jugador {
+  width: 150px;
+  padding: 1px;
+  border-radius: 5px;
+  background-color: #D9D9D9; 
+  border: 2px solid #000; 
+  display: flex;
+  justify-content: flex-start;
+  align-items: center
+
+
+}
+/* Ganador */
+.esquema .ganador_esquema {    
+  display: flex;
+  flex-direction: row;
+  align-items: center;          
+}
+.esquema .ganador {    
+  height: auto;
+  display: flex;    
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+      
+}
+
+.esquema .conectores_ganador {
+  display: flex;
+  align-items: center;    
+}
+.esquema .ganador .jugador {
+  width: 150px;
+  padding: 10px;               
+  background-color: #D9D9D9; 
+  border: 2px solid #000; 
+  border-radius: 5px;
+}
+
+.titulos {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px; 
+}
+
+.titulo {
+  padding: 5px;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Days One";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.53px; /* 175.217% */
+  letter-spacing: 0.263px;
+  text-transform: uppercase;
+  width: 155px;
+  background: #152039;
+  color: #FFF;
+  border-radius: 3px;
+  border: 1px solid #ffffff78;
+}
+
+.win {
+  background-color: #09537ec2!important;
+}
+
+.win .goles {
+ 
+  color: #fff;
+}
+
+.win .equipo {
+
+  color: #fff;
+}
+.win2 {
+  background-color: #09537ec2!important;
+}
+
+.win2 .goles {
+ 
+  color: #fff;
+}
+
+.win2 .equipo {
+
+  color: #fff;
+}
+
+
+/* Media//////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////// */
+
+
+
+@media (max-width: 1200px) {
+  .team-item:nth-child(n + 7) {
+    display: none;
+}
+
+  table {
+      width: 100%;
+      max-width: none; 
+  }
+}
+
+@media (max-width: 1024px) {
+  
+}
+
+@media  (max-width: 991px) {  
+  /* Estilos para pantallas medianas, como tabletas */ 
+  .conectores .conector .conector_doble {
+    width: 8px;
+
+}
+.jornada_contenedor .jornada .jugador{
+  width: 125px;
+}
+.titulos{
+  width: 100%;
+  display: flex;
+    justify-content: space-around;
+}
+.titulo {
+  width: 126px;
+}
+.equipo{
+  font-size: 12px;
+}
+.goles{
+  font-size: 14px;
+}
+
+.esquema .ganador .jugador{
+  width: 140px;
+}
+
+    .team-item:nth-child(n + 6) {
+      display: none;
+  }
+  .score{
+    font-weight:bold
+  }
+  .hiden{
+    display: none;
+  }
+
+  .hiden2{
+    display: none!important;
+  }
+ 
+  .team {
+    color: #000;
+  font-family: Roboto Condensed;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  text-align: left;
+  }
+}
+
+
+@media (max-width: 768px) {
+  
+  .logo{
+    width: 30px;
+  }
+  .logomovil{
+    width: 50%;
+  }
+  .movil2{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+  .team-item:nth-child(n + 4) {
+    display: none;
+}
+
+.hiden2{
+  display: none!important;
+}
+  .inner-card {
+    width: 80px;
+    height: 90px;
+    margin: 0px;
+    background-color: #F5F5F5; 
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+  }
+  .hiden{
+    display: none;
+  }
+  .score{
+    font-weight: bolder;
+  }
+  .titulo2{
+    text-align: center;
+    font-family: Days One;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(180deg, rgba(0, 191, 99, 0.80) 0%, rgba(9, 83, 126, 0.80) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+  }
+
+
+  /* cuadro */
+   .conectores .conector .conector_doble {
+    width: 1px;
+    padding: 2px;
+
+}
+.jornada_contenedor .jornada .jugador{
+  width: 80px;
+}
+.conectores .conector .conector_simple{
+  width: 2px;
+  padding: 0 2px 0 0;
+}
+.titulos{
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+}
+.titulo {
+  width: 80px;
+  font-size: 10px;
+}
+.equipo{
+  font-size: 12px;
+}
+.goles{
+  font-size: 13px;
+}
+
+.esquema .ganador .jugador{
+  width: 80px;
+}
+
+  .team-item:nth-child(n + 6) {
+    display: none;
+ }
+  
+}
+
+
+@media (max-width: 720px) {
+
+  /* Estilos para pantallas más pequeñas, como teléfonos móviles */
+  .team-item:nth-child(n + 4) {
+    display: none;
+
+
+}
+
+.hiden2{
+  display: none!important;
+}
+  .inner-card {
+    width: 80px;
+    height: 90px;
+    margin: 0px;
+    background-color: #F5F5F5; 
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+  }
+  .hiden{
+    display: none;
+  }
+  .score{
+    font-weight: bolder;
+  }
+  .titulo2{
+    text-align: center;
+    font-family: Days One;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(180deg, rgba(0, 191, 99, 0.80) 0%, rgba(9, 83, 126, 0.80) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+  }
+
+
+  /* cuadro */
+   .conectores .conector .conector_doble {
+    width: 1px;
+    padding: 2px;
+
+}
+.jornada_contenedor .jornada .jugador{
+  width: 80px;
+}
+.conectores .conector .conector_simple{
+  width: 2px;
+  padding: 0 2px 0 0;
+}
+.titulos{
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+}
+.titulo {
+  width: 80px;
+  font-size: 10px;
+}
+.equipo{
+  font-size: 12px;
+}
+.goles{
+  font-size: 13px;
+}
+
+.esquema .ganador .jugador{
+  width: 80px;
+  font-size: 12px;
+}
+
+  .team-item:nth-child(n + 6) {
+    display: none;
+ }
+  
+
+}
+
+
+@media (max-width: 480px) {
+  
+  .conectores .conector .conector_doble {
+    width: 2px;
+    padding: 2px;
+
+}
+.jornada_contenedor .jornada .jugador{
+  width: 90px;
+}
+.conectores .conector .conector_simple{
+  width: 1px;
+  padding: 0 1px 0 0;
+}
+.titulos{
+  margin-left: 1px;
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+}
+.titulo {
+  
+  width: 100%;
+  font-size: 10px;
+}
+.equipo{
+  font-size: 10px;
+}
+.goles{
+  font-size: 11px;
+  margin-right: 2px;
+}
+
+.esquema .ganador .jugador{
+  padding: 0px;
+  font-size: 10px;
+  height: 30px;
+  width: 75px;
+}
+.logo{
+  width: 25px;
+}
+.partido{
+  padding: 0px;
+}
+
+  
+  
+  
+  
+}
+
+@media (max-width: 375px) {
+  
+  .conectores .conector .conector_doble {
+    width: 0%;
+    padding: 0px;
+    border: 1px solid #000;
+  
+
+}
+.jornada_contenedor .jornada .jugador{
+  width: 80px;
+  border: 1px solid #000;
+}
+.conectores .conector .conector_simple{
+  width: 0px;
+  padding: 0 0px 0 0;
+  border: 1px solid #000;
+}
+.titulos{
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+
+  justify-content: space-evenly;
+  margin-top: 20px; 
+}
+.titulo {
+  margin-left: 1px;
+  width: 95px;
+  font-size: 10px;
+}
+.equipo{
+  font-size: 10px;
+  background-color: red;
+}
+.goles{
+  font-size: 11px;
+  margin-right: 2px;
+}
+
+.esquema .ganador .jugador{
+  width: 65px;
+  font-size: 11px;
+  border: 1px solid #000;
+}
+
+.partido{
+  padding: 0px;
+}
+
+  
+}
+
+@media (max-width: 320px) {
+  
+  .conectores .conector .conector_doble {
+    width: 1px;
+    padding: 1px;
+
+}
+.jornada_contenedor .jornada .jugador{
+  width: 90px;
+}
+.conectores .conector .conector_simple{
+  width: 2px;
+  padding: 0 2px 0 0;
+}
+.titulos{
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+}
+.titulo {
+  width: 80px;
+  font-size: 10px;
+}
+.equipo{
+  font-size: 12px;
+}
+.goles{
+  font-size: 13px;
+}
+
+.esquema .ganador .jugador{
+  width: 80px;
+}
+
+  
+}
+
+

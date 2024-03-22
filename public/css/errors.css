@@ -1,0 +1,39 @@
+body{
+    background: #152039d1;
+    background-repeat: no-repeat;
+}
+h1{
+    color: #FFF;
+    font-family: Roboto Condensed;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.1rem;
+    text-shadow: -1px -1px 0 #00BF63, 1px -1px 0 #00BF63, -1px 1px 0 #00BF63, 1px 1px 0 #00BF63; /* Borde en color #00BF63 */
+}
+h2{
+    color: #FFF;
+    font-family: Roboto Condensed;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.1rem;
+    text-shadow: -1px -1px 0 #00BF63, 1px -1px 0 #00BF63, -1px 1px 0 #00BF63, 1px 1px 0 #00BF63; /* Borde en color #00BF63 */
+}
+p{
+    color: #FFF;
+    font-family: Roboto Condensed;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.1rem;
+}
+.container{
+    border: 1px red solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
